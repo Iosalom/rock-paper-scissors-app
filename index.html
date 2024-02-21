@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock-paper-scissors-game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Flexbox for centering -->
+      <section class="flex-container">
+        <!-- Grid for element alignment -->
+        <header id="content-container" class="grid-container">
+          <h2>#1 Classic game</h2>
+          <h3 title="Press a button below">
+            <i class="fa-solid" id="rps-icon-player"
+              ><span class="initial-player-text" id="default-text--player">You</span></i
+            >
+            <span class="versus-text">&nbsp;vs.&nbsp;</span>
+            <i class="fa-solid" id="rps-icon-ai"
+              ><span class="initial-ai-text" id="default-text--ai">#AI</span></i
+            >
+          </h3>
+          <p id="score" class="score-styles">
+            <span id="player-score">0</span> <span>&nbsp;:&nbsp;</span> <span id="ai-score">0</span>
+          </p>
+        </header>
+        <!-- Will be hidden until game is lost -->
+        <div id="pop-up-window-player" class="pop-up-window-styles-visible">
+          <h4>Player won!</h4>
+          <p>'Retry' to keep playing</p>
+          <button id="retry-btn-player" title="Press: 'Enter'">Retry</button>
+        </div>
+        <div id="pop-up-window-ai" class="pop-up-window-styles-visible">
+          <h4>AI won!</h4>
+          <p>'Retry' to keep playing</p>
+          <button id="retry-btn-ai" title="Press: 'Enter'">Retry</button>
+        </div>
+        <!-- Flex container for vertical alignment -->
+        <div id="btns-container" class="btns-div-styles">
+          <button id="rock-btn" title="Sortcut: keyup: 'i'">
+            <i class="fa-solid fa-hand-back-fist"></i>
+          </button>
+          <button id="paper-btn" title="Sortcut: keyup: 'o'">
+            <i class="fa-solid fa-hand"></i>
+          </button>
+          <button id="scissors-btn" title="Sortcut: keyup: 'p'">
+            <i class="fa-solid fa-hand-scissors"></i>
+          </button>
+        </div>
+        <div id="hint-info" class="hint-info-styles">
+          <h4><span>Note:&nbsp;&nbsp;</span>Game immediately ends at 3 points!</h4>
+        </div>
+      </section>
+      <!-- End of wrapper -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- After reaching 3 it will mean 1 global score, and reaching 3 times Global Score will end game -->
