@@ -206,6 +206,7 @@ button {
 
 .hint-info-styles h4 {
   border-bottom: 1px solid rgb(255, 80, 80);
+  transition: 0.3s ease-out;
 }
 .hint-info-styles-almost-hidden h4 {
   color: rgb(255, 255, 255, 0.4);
@@ -254,9 +255,10 @@ button {
     font-size: 15px;
   }
   .hint-info-styles h4 {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
+/* POP-UP */
 @media (max-width: 640px) {
   .pop-up-window-styles-ai,
   .pop-up-window-styles-player {
@@ -320,10 +322,17 @@ button {
     transition: 0.3s ease-out;
   }
   .hint-info-styles h4 {
-    font-size: 7px;
+    font-size: 9px;
   }
   .versus-text {
     font-size: 12px;
+  }
+  /* NEW CODE */
+  .btns-div-styles {
+    margin: 0 0 20px;
+  }
+  .grid-container {
+    grid-gap: 15px;
   }
 }
 @media (max-width: 498px) {
@@ -351,8 +360,18 @@ button {
     font-weight: 500;
     transition: 0.3s ease-out;
   }
+  .hint-info-styles h4 {
+    font-size: 7px;
+  }
   .versus-text {
     font-size: 8px;
+  }
+   /* NEW CODE */
+  .btns-div-styles {
+    margin: 0 0 10px;
+  }
+  .grid-container {
+    grid-gap: 10px;
   }
 }
 @media (max-width: 440px) {
@@ -384,7 +403,14 @@ button {
     font-size: 15px;
   }
   .hint-info-styles h4 {
-    font-size: 5px;
+    font-size: 6px;
+  }
+   /* NEW CODE */
+  .btns-div-styles {
+    margin: 0 0 20px;
+  }
+  .grid-container {
+    grid-gap: 0;
   }
 }
 @media (max-width: 400px) {
